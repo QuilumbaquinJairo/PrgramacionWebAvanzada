@@ -1,0 +1,54 @@
+﻿@page
+@using WebApplication1.Models
+@model WebApplication1.Pages.personas
+
+@{
+    ViewData["Title"] = "Personas";
+}
+
+<!DOCTYPE html>
+
+<html lang="esp">
+<head>
+    <title>Personas</title>
+</head>
+<body>
+<h1>Personas</h1>
+<div>
+    <form method="post">
+        <input type="number" name="id">
+        <input type="text" name="nombre">
+        <input type="number" name="edad">
+        <button type="submit">Add</button>
+    </form>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (Person person in Model.people)
+        {
+            <tr>
+                <td>
+                    @person.Id
+                </td>
+                
+                <td>
+                    @person.nombre
+                </td>
+                <td>
+                    @person.edad
+                </td>
+                
+            </tr>
+        }
+        
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

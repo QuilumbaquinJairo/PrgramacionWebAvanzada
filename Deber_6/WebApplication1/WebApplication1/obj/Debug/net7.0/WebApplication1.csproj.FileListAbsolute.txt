@@ -29,3 +29,7 @@ A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\We
 A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.pdb
 A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.genruntimeconfig.cache
 A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\obj\Debug\net7.0\ref\WebApplication1.dll
+A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+A:\Documentos\Cuarto Semestre\ProgramacionWeb\Deberes\Deber_6\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.CopyComplete
