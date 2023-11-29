@@ -1,8 +1,18 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Reloj";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<main class="contenedor-principal">
+    <div class="" id="cronometro">00:00:00</div>
+    <div class="contenedor-botones">
+        <button id="boton-inicio-pausa" class="btn btn-primary iniciar">
+            <i class="bi bi-play-fill"></i>
+        </button>
+        <button id="boton-reiniciar" class="btn btn-secondary">
+            <i class="bi bi-arrow-counterclockwise"></i>
+        </button>
+    </div>
+</main>
