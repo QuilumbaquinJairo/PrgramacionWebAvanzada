@@ -1,1 +1,36 @@
-<p>create works!</p>
+<h2>Create User</h2>
+
+<div class="col-sm-5">
+  <form #form="ngForm" (ngSubmit)="SaveData(form)">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="Name" class="form-control" #Name="ngModel" placeholder="Nombre" [(ngModel)]="user.name"
+             required/>
+      <div *ngIf="Name.errors && form.submitted" class="text-danger">
+        Please Enter Name
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Addres</label>
+      <textarea type="text" name="Address" class="form-control" #Address="ngModel" placeholder="Address" [(ngModel)]="user.address"
+                required></textarea>
+      <div *ngIf="Address.errors && form.submitted" class="text-danger">
+        Please Enter address
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Contact</label>
+      <input type="text" name="Contact" class="form-control" #Contact="ngModel" placeholder="Contact" [(ngModel)]="user.contact"
+             required/>
+      <div *ngIf="Contact.errors && form.submitted" class="text-danger">
+        Please Enter contact
+      </div>
+    </div>
+
+    <div>
+      <input type="submit" value="Save" class="btn btn-primary">
+    </div>
+  </form>
+</div>

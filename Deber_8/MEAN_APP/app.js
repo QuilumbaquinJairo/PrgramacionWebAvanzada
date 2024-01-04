@@ -1,4 +1,5 @@
 let express = require('express');
+const cors = require('cors');
 const apiRoutes = require('./server/routes/api.routes');
 
 //setup enviroment
@@ -7,6 +8,7 @@ require('dotenv').config();
 require('./server/config/db')
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use('/api',apiRoutes);
 

@@ -18,8 +18,8 @@ router.get('/', (req, res) => {
     })
 }).post('/', (req, res) => {
     const obj=req.body;
-    user.create(obj).then(() => {
-        res.status(httpStatus.CREATED).send(obj);
+    user.create(obj).then(doc => {
+        res.status(httpStatus.CREATED).send(doc);
     }).catch(err => {
         res.status(httpStatus.INTERNAL_SERVER_ERROR).send(err);
     })

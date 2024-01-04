@@ -1,1 +1,24 @@
-<p>users works!</p>
+<p>User List</p>
+<hr>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.contact}}</td>
+        <td>{{item.address}}</td>
+      <td>
+        <a [routerLink]="['/edit',item._id]" class="btn btn-success">Edit</a>
+      </td>
+    </tr>
+    </tbody>
+</table>
